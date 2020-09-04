@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Two-Factor Authentication</h1>
+    <p>Please confirm this log-in attempt on the Authy app on your phone.</p>
+
+    {{ wtf.quick_form(form) }}
+{% endblock %}
